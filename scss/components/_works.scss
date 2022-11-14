@@ -1,8 +1,11 @@
 .works-section {
     display: none;
-    
     padding-bottom: 94px;
+    @media screen and(min-width:1200px) {
+        display: flex;
+    }
 }
+
 .works__title {
     font-weight: 700;
     font-size: 36px;
@@ -13,7 +16,7 @@
 }
 
 .works__list {
-    // display: flex;
+    display: flex;
     list-style-type: none;
     padding-left: 0;
 }

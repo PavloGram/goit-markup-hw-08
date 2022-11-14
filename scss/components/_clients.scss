@@ -1,6 +1,11 @@
 .section-clients {
   padding-top: 60px;
   padding-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .clients__title {
@@ -27,6 +32,14 @@
   justify-content: center;
   width: 210px;
   height: 92px;
+
+  @media screen and(min-width:768px){
+    width: 226px;
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 170px;
+  }
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
