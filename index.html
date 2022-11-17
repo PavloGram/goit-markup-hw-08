@@ -21,6 +21,13 @@
         <a href="./index.html" lang="en" class="logo page-header__logo"
           ><span class="logo-design-color">Web</span>Studio</a
         >
+        <button type="button" class="page-header__menu is-open " .js-open-menu >
+          <svg class="page-header__icon" width="40" height="40" 
+          aria-label="переключатель мобільного меню">
+            <use class="page-header__icon-close" href="./images/icon.svg#icon-close_24px"></use>
+            <use class="page-header__icon-menu" href="./images/icon.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
         <nav>
           <ul class="nav">
             <li class="nav__item">
@@ -62,7 +69,7 @@
             вашого бізнесу
           </h1>
           <button type="submit" class="button hero-button" data-modal-open>Замовити послугу</button>
-        <!-- </div> -->
+        </div>
       </section>
       <section class="section-benefits">
         <div class="container">
@@ -513,5 +520,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

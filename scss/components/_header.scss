@@ -1,6 +1,7 @@
 
 
 .page-header {
+  
   background-color: var(--white-text-color);
     border-bottom: 1px solid #ececec;
     padding: 15px 16px;
@@ -23,8 +24,8 @@
 }
 
 .page-header__container {
-    margin: 0 auto;
- 
+  
+    
   display: flex;
   align-items: center;
 }
@@ -39,6 +40,27 @@
     margin-right: 93px;
   }
   
+}
+.page-header__menu{
+  display: inline-flex;
+  margin:0 0 0 auto;
+  padding: 0;
+  border: none;
+  // background-color: transparent;
+
+  .page-header__icon-close{
+    
+    display: none;
+  }
+  
+}
+
+.page-header__menu.is-open .page-header__icon-close{
+  
+  display: block;}
+
+.page-header__menu.is-open .page-header__icon-menu{
+  display: none;
 }
 
 .nav {

@@ -4,35 +4,57 @@
   padding-bottom: 118px;
   margin: 0 auto;
 
-  @media screen and(min-width:1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    
-     
-  }
- 
- 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/bgi.jpg);
-    background-position:center ;
-    // background-size: contain;
-    
-    
 
-    @media screen and(min-width: 480px) {
-        width: 480px;
-        // background-size:auto 400px;
-      }
-            @media screen and(min-width: 768px) {
-              width: 768px;
-              
-            }
-            @media screen and(min-width:1200px) {
-              // margin-left: -200px;
-              // margin-right: -200px;
-            width: 1600px;}
-             
+@media screen and (max-width:767px) {
+  max-width: 480px;
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bgi/hero-images480x400.jpg);
+  background-position: center;
+  background-size: cover;
+ 
+
+  @media screen and (min-device-pixel-ratio: 2),
+   (min-resolution: 192dpi),
+  (min-resolution: 2dppx){
+background-image: url(/images/hero-bgi/hero-images480x400@x2.jpg);
+  }
+}
+
+@media screen and  (min-width:768px){
+  width: 768px;
     
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-bgi/hero-images768x400.jpg);
+    background-position: center;
+    background-size: cover;
+  
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: url(/images/hero-bgi/hero-images480x400@x2.jpg);
+      }
+}
+
+  
+  @media screen and(min-width:1200px) {
+    width: 1600px;
+  padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-bgi/hero-images1600x600.jpg);
+      background-position: center;
+      background-size: cover;
+      
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) 
+      {
+        background-image: url(/images/hero-bgi/hero-images1600x600@x2.jpg);
+      }
+  }
 }
 .hero__title {
   display: block;
@@ -47,16 +69,13 @@
   margin-bottom: 30px;
 
   @media screen and(min-width:1200px) {
-      font-size: 44px;
-      line-height: 1.36;
-    }
-
-
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .hero-button {
   display: block;
   margin-left: auto;
   margin-right: auto;
   padding: 10px 32px;
-  
 }
