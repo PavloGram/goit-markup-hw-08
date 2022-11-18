@@ -128,34 +128,43 @@
           <ul class="works__list">
             <li class="works__item">
               <div class="works__div">
+                <picture>
+                  <source  srcset="./images/work/box-1-desktop.jpg 1x, ./images/work/box-1-desktop@x2.jpg 2x">
                 <img
                   class="works__images"
-                  src="./images/box_1.jpg"
+                  src="./images/work/box-1-desktop.jpg"
                   alt="людина працює на планшеті через клавіатуру "
                   width="370"
                 />
+                </picture>
                 <p class="works__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="works__item">
               <div class="works__div">
+                <picture>
+                  <source srcset="./images/work/box-2-desktop.jpg 1x, ./images/work/box-2-desktop@x2.jpg 2x"/>
                 <img
                   class="works__images"
-                  src="./images/box_2.jpg"
+                  src="./images/work/box-2-desktop.jpg"
                   alt="смартфон і ноутбук"
                   width="370"
                 />
+                </picture>
                 <p class="works__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="works__item">
               <div class="works__div">
+                <pictur>
+                  <source srcset="./images/work/box-3-desktop.jpg 1x, ./images/work/box-3-desktop@x2.jpg 2x"/>
                 <img
                   class="works__images"
-                  src="./images/box_3.jpg"
+                  src="./images/work/box-3-desktop.jpg"
                   alt="робота на планшеті за допомогою стілуса"
                   width="370"
                 />
+                </picture>
                 <p class="works__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -167,7 +176,15 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img class="team__images" src="./images/igor.jpg" alt="молодий чоловік в сорочці і окулярах"  />
+              <picture>
+                <source srcset="./images/team-images/igor-mobile.jpg 1x, ./images/team-images/igor-mobile@x2.jpg 2x"
+                 media="(max-width:767px)"/>
+                <source  srcset="./images/team-images/igor-tablet.jpg 1x, ./images/team-images/igor-tablet@x2.jpg 2x" 
+                media="(max-width:1199px)"/>
+                <source srcset="./images/team-images/igor-desktop.jpg 1x, ./images/team-images/igor-desktop@x2.jpg 2x" 
+                media="(min-width:1200px)"/>
+              <img class="team__images" src="./images/team-images/igor-mobile.jpg" alt="молодий чоловік в сорочці і окулярах"  />
+              </picture>
               <div class="team-card"> 
                 <h3 class="team-card__title">Ігор Дем’яненко</h3>
                 <p lang="en" class="team-card__text">Product Designer</p>
@@ -204,7 +221,15 @@
               </div>
             </li>
             <li class="team__item">
-              <img class="team__images" src="./images/olga.jpg" alt="молода дівчина в окулярах" width="100%" />
+              <picture>
+                <source srcset="./images/team-images/olga-mobile.jpg 1x, ./images/team-images/olga-mobile@x2.jpg 2x" 
+                media="(max-width:767px)"/>
+                <source srcset="./images/team-images/olga-tablet.jpg 1x, ./images/team-images/olga-tablet@x2.jpg 2x" 
+                media="(max-width:1199px)"/>
+                <source srcset="./images/team-images/olga-desktop.jpg 1x, ./images/team-images/olga-desktop@x2.jpg 2x" 
+                media="(min-width:1200px)" />
+              <img class="team__images" src="./images/team-images/olga-mobile.jpg" alt="молода дівчина в окулярах"  />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Ольга Рєпіна</h3>
                 <p lang="en" class="team-card__text">Frontend Developer</p>
@@ -241,11 +266,19 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset="./images/team-images/mukola-mobile.jpg 1x, ./images/team-images/mukola-mobile@x2.jpg 2x" 
+                media="(max-width:767px)"/>
+                <source srcset="./images/team-images/mukola-tablet.jpg 1x, ./images/team-images/mukola-tablet@x2.jpg 2x"
+                 media="(max-width:1199px)" />
+                <source srcset="./images/team-images/mukola-desktop.jpg 1x, ./images/team-images/mukola-desktop@x2.jpg 2x"
+                 media="(min-width:1200px)" />
               <img class="team__images"
-                src="./images/mikola.jpg"
+                src="./images/team-images/mukola-mobile.jpg"
                 alt="молодий усміхнений чоловік в сорочці"
                 width="100%"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Микола Тарасов</h3>
                 <p lang="en" class="team-card__text">Marketing</p>
@@ -282,11 +315,19 @@
               </div>
             </li>
             <li class="team__item">
+              <picture>
+                <source srcset="./images/team-images/muhail-mobile.jpg 1x,./images/team-images/muhail-mobile@x2.jpg 2x" 
+                media="(max-width:767px)"/>
+                <source srcset="./images/team-images/muhail-tablet.jpg 1x,./images/team-images/muhail-tablet@x2.jpg 2x"
+                  media="(max-width:1199px)" />
+                  <source srcset="./images/team-images/muhail-desktop.jpg 1x,./images/team-images/muhail-desktop@x2.jpg 2x"
+                    media="(min-width:1200px)" />
               <img class="team__images"
-                src="./images/mihail.jpg"
+                src="./images/team-images/muhail-mobile.jpg"
                 alt="молодий чоловік в футболці і окулярах"
                 width="100%"
               />
+              </picture>
               <div class="team-card">
                 <h3 class="team-card__title">Михайло Єрмаков</h3>
                 <p lang="en" class="team-card__text">UI Designer</p>
