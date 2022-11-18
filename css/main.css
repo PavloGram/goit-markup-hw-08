@@ -602,12 +602,17 @@ body {
 }
 
 .page-header__menu {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 0 0 0 auto;
   padding: 0;
   border: none;
+}
+@media screen and (min-width: 768px) {
+  .page-header__menu {
+    display: none;
+  }
 }
 .page-header__menu .page-header__icon-close {
   display: none;
@@ -655,7 +660,7 @@ body {
 
 .nav__studio--bottom-border::after {
   position: absolute;
-  bottom: -30px;
+  bottom: -31px;
   left: -1.5px;
   content: "";
   display: block;

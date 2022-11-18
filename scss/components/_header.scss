@@ -42,12 +42,14 @@
   
 }
 .page-header__menu{
-  display: inline-flex;
+  display:flex;
   margin:0 0 0 auto;
   padding: 0;
   border: none;
   // background-color: transparent;
-
+@media screen and (min-width:768px) {
+    display: none;
+  }
   .page-header__icon-close{
     
     display: none;
@@ -99,7 +101,7 @@
 .nav__studio--bottom-border {
   &::after {
     position: absolute;
-    bottom: -30px;
+    bottom: -31px;
     left: -1.5px;
     content: '';
     display: block;
