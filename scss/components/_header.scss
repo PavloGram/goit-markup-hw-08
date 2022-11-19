@@ -1,31 +1,28 @@
-
-
 .page-header {
-  
+  position: relative;
+
   background-color: var(--white-text-color);
-    border-bottom: 1px solid #ececec;
-    padding: 15px 16px;
-    margin: 0 auto;
+  border-bottom: 1px solid #ececec;
+  padding: 15px 16px;
+  margin: 0 auto;
 
-    @media (min-width: 480px) {
-               width: 480px;
-             }   
-                @media (min-width: 768px) {
-                  width: 768px;
-                  padding-top: 21px;
-                  padding-bottom: 21px;
-                 }
+  @media (min-width: 480px) {
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
 
-                 @media screen and (min-width:1200px) {
-                  width: 1200px;
-                  padding-top: 24px;
-                  padding-bottom: 24px;
-                 }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
 }
 
 .page-header__container {
-  
-    
   display: flex;
   align-items: center;
 }
@@ -34,36 +31,174 @@
   color: #000000;
   @media screen and(min-width:768px) {
     margin-right: 87px;
-    
   }
   @media screen and(min-width:1200px) {
     margin-right: 93px;
   }
-  
 }
-.page-header__menu{
-  display:flex;
-  margin:0 0 0 auto;
-  padding: 0;
+.mobile-menu__open {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   border: none;
-  // background-color: transparent;
-@media screen and (min-width:768px) {
+  background-color: transparent;
+  @media screen and (min-width: 768px) {
     display: none;
   }
-  .page-header__icon-close{
-    
-    display: none;
+
+  &:hover {
+    cursor: pointer;
   }
-  
+
+  & {
+    &:hover,
+    &:focus,
+    &:active {
+      .mobile-menu__icon-menu {
+        fill: var(--hover-link-button-color);
+      }
+    }
+  }
 }
 
-.page-header__menu.is-open .page-header__icon-close{
-  
-  display: block;}
+.mobile-menu.is-open {
+  display: block;
+}
 
-.page-header__menu.is-open .page-header__icon-menu{
+.mobile-menu {
   display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 480px;
+  max-width: 480px;
+  height: 796px;
+  background-color: var(--white-text-color);
+
+  padding: 48px 40px;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
+
+.mobile-menu__close {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+  right: 9px;
+  top: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: none;
+  background-color: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  & {
+    &:hover,
+    &:focus,
+    &:active {
+      .mobile-menu__icon-close {
+        fill: var(--hover-link-button-color);
+      }
+    }
+  }
+}
+
+.mobile-menu__nav-list{
+  margin-bottom: 306px;
+}
+
+.mobile-menu__nav-item{
+  &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+}
+
+.mobile-menu__nav-link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: #212121;
+}
+
+.mobile-menu__contact-item{
+padding-bottom: 32px;
+}
+.mobile-menu__contact-tel{
+  font-style: normal;
+font-weight: 500;
+font-size: 34px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: #2196f3;
+text-decoration: none;
+
+}
+
+.mobile-menu__contact-mail{
+    font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 1.17;
+      letter-spacing: 0.02em;
+      color: #757575;
+      text-decoration: none;
+}
+
+.mobile-menu__social-list{
+  display: flex;
+  align-items: center;
+  padding-top: 32px;
+  
+}
+
+.mobile-menu__social-item{
+  height: 22px;
+  &:not(:last-child){
+border-right: 1px solid rgba( 33, 33, 33, 0.2);
+  }
+
+
+  &:not(:first-child) {
+      padding-left: 10px;
+    }
+  
+    &:not(:last-child) {
+      padding-right: 10px;
+    }
+}
+
+.mobile-menu__social-link{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  text-decoration: none;
+
+
+
+
+}
+
 
 .nav {
   display: none;
@@ -71,8 +206,7 @@
   padding-left: 0;
 
   @media screen and(min-width:768px) {
-        display: flex;
-    
+    display: flex;
   }
 }
 
@@ -91,12 +225,12 @@
 
   transition: color 250ms var(--timing-function);
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     color: var(--hover-link-button-color);
   }
 }
-
-
 
 .nav__studio--bottom-border {
   &::after {
@@ -133,12 +267,10 @@
   padding-left: 0;
 
   @media screen and(min-width: 768px) {
-   
     display: block;
   }
   @media screen and(min-width:1200px) {
     display: flex;
-    
   }
 }
 
@@ -147,19 +279,18 @@
 
   @media screen and(min-width:768px) {
     &:not(:last-child) {
-        margin-bottom: 10px;
-      }
+      margin-bottom: 10px;
+    }
   }
 
-
-@media screen and (min-width:1200px) {
-  &:not(:last-child) {
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
       margin-bottom: 0px;
     }
-  &:not(:last-child) {
+    &:not(:last-child) {
       margin-right: 50px;
     }
-}
+  }
 }
 
 .contact__icon-smartphone {
@@ -170,8 +301,8 @@
 
   @media screen and(min-width:1200px) {
     width: 10px;
-      height: 16px;
-      margin-right: 10px;
+    height: 16px;
+    margin-right: 10px;
   }
 }
 
@@ -182,10 +313,10 @@
   fill: var(--basic-text-color);
 
   @media screen and(min-width:1200px) {
-      width: 16px;
-        height: 12px;
-        margin-right: 10px;
-    }
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+  }
 }
 
 .contact__link {
@@ -201,27 +332,23 @@
 
   @media screen and(min-width:1200px) {
     font-size: 14px;
-          line-height: 1.14;
+    line-height: 1.14;
   }
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     color: var(--hover-link-button-color);
   }
-
- 
 }
 
 .contact__link {
-  &:hover, &:focus, &:active {
-
+  &:hover,
+  &:focus,
+  &:active {
     .contact__icon-mail,
     .contact__icon-smartphone {
       fill: var(--hover-link-button-color);
     }
   }
-
- 
 }
-
-
-
