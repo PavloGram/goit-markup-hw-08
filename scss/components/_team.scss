@@ -9,28 +9,21 @@
     padding-bottom: 94px;
   }
 
-  
   background: var(--basic-background-color);
-  
+
   @media (min-width: 480px) {
-      width: 480px;
-      
-      
-    }
-        @media (min-width: 768px) {
-          width: 768px;
-          
-          
-        }
-          @media screen and(min-width:1200px) {
-            width: 1200px;
-            
-            
-          }
+    width: 480px;
+  }
+  @media (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and(min-width:1200px) {
+    width: 1200px;
+  }
 }
 
-.team__images{
- max-width: 100%;
+.team__images {
+  max-width: 100%;
   height: auto;
 }
 
@@ -44,15 +37,13 @@
 }
 
 .team__list {
-  
   list-style-type: none;
-  background-color:$basic-background-color;
+  background-color: $basic-background-color;
 
-  @media (min-width: 768px){
+  @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
   }
-  
 }
 
 .team__item {
@@ -72,24 +63,23 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
- @media screen and(min-width:768px) {
-  margin-right: 30px;
-  &:nth-child(2n + 2) {
+  @media screen and(min-width:768px) {
+    margin-right: 30px;
+    &:nth-child(2n + 2) {
       margin-right: 0;
     }
-        &:nth-last-child(-n + 2) {
-             margin-bottom: 0;
-           }
- }
-@media screen and(min-width:1200px) {
-  &:not(:last-child){
-    margin-right: 30px;
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
-     &:nth-last-child(-n + 4) {
-       margin-bottom: 0;
-     }
-}
-
+  @media screen and(min-width:1200px) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+    &:nth-last-child(-n + 4) {
+      margin-bottom: 0;
+    }
+  }
 }
 
 .team-card {
@@ -130,22 +120,23 @@
   border-radius: 50%;
   transition: background 250ms $timing-function;
 
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     background: $hover-link-button-color;
   }
 
-
-  &:hover, &:focus, &:active {
+  &:hover,
+  &:focus,
+  &:active {
     .team-icon {
       fill: $white-icon-color;
       cursor: pointer;
     }
   }
-  
 }
 
 .team-icon {
   fill: $basic-icon-color;
   transition: fill 250ms $timing-function;
 }
-
