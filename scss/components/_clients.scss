@@ -48,7 +48,7 @@
   transition: border 250ms $timing-function, border-radius 250ms $timing-function;
 
   &:hover, &:focus, &:active {
-    border: 1px solid $hover-link-button-color;
+    border: 1px solid $hover-link-button-color ;
     border-radius: 4px;
   }
   

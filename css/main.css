@@ -1471,7 +1471,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
-  background: #f5f4fa;
+  background: var(--basic-background-color);
 }
 @media screen and (min-width: 1200px) {
   .section-team {
@@ -1525,9 +1525,20 @@ body {
 
 .team__item {
   background: #ffffff;
+  width: 450px;
   border-radius: 4px;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+@media screen and (min-width: 768px) {
+  .team__item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team__item {
+    width: 270px;
+  }
 }
 .team__item:not(:last-child) {
   margin-bottom: 30px;
