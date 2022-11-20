@@ -1499,6 +1499,16 @@ body {
   max-width: 100%;
   height: auto;
 }
+@media screen and (max-width: 767px) {
+  .team__images {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .team__images {
+    width: 354px;
+  }
+}
 
 .team__title {
   font-weight: 700;
@@ -1512,7 +1522,6 @@ body {
 .team__list {
   list-style-type: none;
   background-color: #f5f4fa;
-  max-width: 480px;
 }
 @media (min-width: 768px) {
   .team__list {
