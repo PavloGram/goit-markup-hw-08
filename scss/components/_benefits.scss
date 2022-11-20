@@ -57,7 +57,7 @@ width: 270px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: var(--basic-background-color);
+  background: $basic-background-color;
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -81,7 +81,7 @@ width: 270px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--basic-text-color);
+  color: $basic-text-color;
 }
 
 

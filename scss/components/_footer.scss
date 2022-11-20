@@ -37,16 +37,13 @@
   display: block;
   text-align: center;
   
-  color: var(--white-text-color);
+  color: $white-text-color;
   @media screen and(min-width:1200px) {
     text-align: left;
   }
 }
 
-// .footer-item {
-//   margin-right: auto;
-//   margin-left: auto;
-// }
+
 .address__list {
   list-style-type: none;
   margin-top: 20px;
@@ -69,7 +66,7 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: $white-text-color;
    
   @media screen and(min-width:1200px) {
       text-align: left;
@@ -83,11 +80,11 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--footer-link-color);
-  transition: color 250ms var(--timing-function);
+  color: $footer-link-color;
+  transition: color 250ms $timing-function;
 
   &:hover, &:focus, &:active {
-    color: var(--hover-link-button-color);
+    color: $hover-link-button-color;
   }
     @media screen and(min-width:1200px) {
       text-align: left;
@@ -111,7 +108,7 @@ margin-left: 165px;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: $white-text-color;
     text-transform: uppercase;
 
     padding-top: 60px;
@@ -148,17 +145,17 @@ margin-left: 165px;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
 
-  transition: background 250ms var(--timing-function);
+  transition: background 250ms $timing-function;
 
   &:hover, &:focus, &:active {
-    background: var(--hover-link-button-color);
+    background: $hover-link-button-color;
     cursor: pointer;
   }
 
 }
 
 .footer-join__icon {
-  fill: var(--white-icon-color);
+  fill: $white-icon-color;
 }
 
 .footer-form {
@@ -181,7 +178,7 @@ margin-left: 165px;
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: $white-text-color;
   padding-top: 60px;
   text-transform: uppercase;
 
@@ -211,7 +208,7 @@ margin-left: 165px;
   font-size: 16px;
   line-height: 1.25;
   letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: $footer-link-color;
 
   &:hover {
     cursor: pointer;
@@ -223,7 +220,7 @@ margin-left: 165px;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: $footer-link-color;
   }
      @media screen and(min-width:1200px) {
        width: 358px;
@@ -255,5 +252,5 @@ margin-left: 165px;
   right: 28px;
   top: 50%;
   transform: translateY(-50%);
-  fill: var(--white-icon-color);
+  fill: $white-icon-color;
 }

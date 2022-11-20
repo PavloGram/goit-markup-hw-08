@@ -41,14 +41,14 @@
     width: 170px;
   }
 
-  border: 1px solid #afb1b8;
+  border: 1px solid $basic-icon-color;
   border-radius: 4px;
   cursor: pointer;
 
-  transition: border 250ms var(--timing-function), border-radius 250ms var(--timing-function);
+  transition: border 250ms $timing-function, border-radius 250ms $timing-function;
 
   &:hover, &:focus, &:active {
-    border: 1px solid var(--hover-link-button-color);
+    border: 1px solid $hover-link-button-color;
     border-radius: 4px;
   }
   
@@ -57,13 +57,13 @@
 .clients__link {
   &:hover, &:focus, &:active {
     .clients__icon {
-      fill: var(--hover-link-button-color);
+      fill: $hover-link-button-color;
     }
   }
   
 }
 
 .clients__icon {
-  fill: var(--basic-icon-color);
-  transition: fill 250ms var(--timing-function);
+  fill: $basic-icon-color;
+  transition: fill 250ms $timing-function;
 }
