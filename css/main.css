@@ -625,12 +625,12 @@ body {
 
 .mobile-menu {
   display: none;
-  position: absolute;
+  position: fixed;
   right: 0;
   left: 0;
   top: 0;
   max-width: 480px;
-  max-height: 769px;
+  height: 100%;
   background-color: #ffffff;
   padding: 48px 40px;
 }
@@ -643,7 +643,7 @@ body {
 .mobile-menu__close {
   width: 40px;
   height: 40px;
-  position: absolute;
+  position: fixed;
   right: 9px;
   top: 9px;
   display: -webkit-box;
@@ -665,8 +665,19 @@ body {
   fill: #2196f3;
 }
 
-.mobile-menu__nav-list {
-  margin-bottom: 306px;
+.mobile-menu__set {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-menu__nav {
+  margin-bottom: auto;
 }
 
 .mobile-menu__nav-item:not(:last-child) {
