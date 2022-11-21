@@ -9,7 +9,7 @@
     padding-bottom: 94px;
   }
 
-  background: var(--basic-background-color);
+  background: $basic-background-color;
 
   @media (min-width: 480px) {
     width: 480px;
@@ -42,12 +42,16 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+  @media screen and(min-width:1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team__list {
   list-style-type: none;
   background-color: $basic-background-color;
-// max-width: 480px;
+
   @media (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;

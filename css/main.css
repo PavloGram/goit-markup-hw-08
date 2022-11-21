@@ -134,6 +134,11 @@ body {
   text-align: center;
   margin-bottom: 10px;
 }
+@media screen and (min-width: 768px) {
+  .benefits__title {
+    text-align: left;
+  }
+}
 
 .benefits__text {
   font-size: 14px;
@@ -181,6 +186,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .clients__list {
@@ -243,28 +254,6 @@ body {
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
-}
-@media (min-width: 480px) {
-  .section-footer {
-    width: 480px;
-  }
-}
-@media (min-width: 768px) {
-  .section-footer {
-    width: 768px;
-    padding-left: 76px;
-    padding-right: 89px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .section-footer {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
 }
 
 .footer__list {
@@ -277,6 +266,14 @@ body {
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-left: 61px;
+    padding-right: 74px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__list {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -366,12 +363,13 @@ body {
 }
 @media screen and (min-width: 768px) {
   .footer-join__title {
-    padding-top: 0;
+    padding-top: 5px;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer-join__title {
     text-align: left;
+    padding-top: 0;
   }
 }
 
@@ -632,7 +630,7 @@ body {
   left: 0;
   top: 0;
   max-width: 480px;
-  height: 796px;
+  max-height: 769px;
   background-color: #ffffff;
   padding: 48px 40px;
 }
@@ -914,7 +912,6 @@ body {
 }
 @media screen and (max-width: 767px) {
   .section-hero {
-    max-width: 480px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgi/hero-images480x400.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgi/hero-images480x400.jpg);
     background-position: center;
@@ -928,7 +925,6 @@ body {
 }
 @media screen and (min-width: 768px) {
   .section-hero {
-    width: 768px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bgi/hero-images768x400.jpg);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bgi/hero-images768x400.jpg);
     background-position: center;
@@ -942,7 +938,6 @@ body {
 }
 @media screen and (min-width: 1200px) {
   .section-hero {
-    width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
     margin: 0 auto;
@@ -1330,8 +1325,8 @@ body {
 }
 
 .section-portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .portfolio__list-button {
@@ -1339,9 +1334,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin-bottom: 50px;
   margin-right: 8px;
 }
@@ -1359,18 +1353,18 @@ body {
   border: 0;
   padding: 6px 22px;
   border-radius: 4px;
-  -webkit-transition: color 250ms var(--timing-function), background 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background 250ms var(--timing-function), box-shadow 250ms var(--timing-function);
-  transition: color 250ms var(--timing-function), background 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__button:hover,
 .portfolio__button:focus,
 .portfolio__button:active {
   cursor: pointer;
-  color: var(--white-text-color);
-  background-color: var(--hover-link-button-color);
+  color: #ffffff;
+  background-color: #2196f3;
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 3px 1px rgba(0, 0, 0, 0.1);
 }
@@ -1383,7 +1377,6 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
@@ -1392,10 +1385,10 @@ body {
   background-color: #ffffff;
   margin-right: 30px;
   margin-bottom: 30px;
-  -webkit-transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: -webkit-box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function);
-  transition: box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-product__item:hover {
   -webkit-box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06);
@@ -1431,13 +1424,13 @@ body {
   font-size: 18px;
   line-height: 1.55;
   letter-spacing: 0.03em;
-  color: var(--white-text-color);
+  color: #ffffff;
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: -webkit-transform 250ms var(--timing-function);
-  transition: -webkit-transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function);
-  transition: transform 250ms var(--timing-function), -webkit-transform 250ms var(--timing-function);
+  -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-product__description {
@@ -1459,7 +1452,7 @@ body {
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: var(--basic-text-color);
+  color: #757575;
 }
 
 .portfolio-product__text-lab {
@@ -1471,7 +1464,7 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   margin: 0 auto;
-  background: var(--basic-background-color);
+  background: #f5f4fa;
 }
 @media screen and (min-width: 1200px) {
   .section-team {
@@ -1517,6 +1510,12 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .team__list {

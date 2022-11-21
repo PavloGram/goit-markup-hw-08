@@ -2,31 +2,29 @@
   background-color: #2f303a;
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 
-  @media (min-width: 480px) {
-    width: 480px;
-  }
 
-  @media (min-width: 768px) {
-    width: 768px;
-    padding-left: 76px;
-    padding-right: 89px;
-  }
-  @media screen and(min-width:1200px) {
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
+ 
+
+  
 }
 .footer__list {
   list-style: none;
   @media screen and(min-width:768px) {
     display: flex;
     flex-wrap: wrap;
-  }
+    padding-left: 61px;
+    padding-right: 74px;
+      }
+      @media screen and(min-width:1200px) {
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+
+
+
+   
 }
 .footer__logo {
   display: block;
@@ -109,10 +107,11 @@
   padding-top: 60px;
 
   @media screen and(min-width:768px) {
-    padding-top: 0;
+    padding-top: 5px;
   }
   @media screen and(min-width:1200px) {
     text-align: left;
+    padding-top: 0;
   }
 }
 .footer-join__list {
