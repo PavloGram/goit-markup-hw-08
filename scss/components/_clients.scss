@@ -27,6 +27,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+
 }
 
 .clients__link {
@@ -36,11 +37,11 @@
   width: 210px;
   height: 92px;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px){
     width: 226px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width:1200px) {
     width: 170px;
   }
 
@@ -50,22 +51,20 @@
 
   transition: border 250ms $timing-function, border-radius 250ms $timing-function;
 
-  &:hover,
-  &:focus,
-  &:active {
-    border: 1px solid $hover-link-button-color;
+  &:hover, &:focus, &:active {
+    border: 1px solid $hover-link-button-color ;
     border-radius: 4px;
   }
+  
 }
 
 .clients__link {
-  &:hover,
-  &:focus,
-  &:active {
+  &:hover, &:focus, &:active {
     .clients__icon {
       fill: $hover-link-button-color;
     }
   }
+  
 }
 
 .clients__icon {
