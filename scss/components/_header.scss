@@ -29,10 +29,10 @@
 
 .page-header__logo {
   color: #000000;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     margin-right: 87px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     margin-right: 93px;
   }
 }
@@ -217,7 +217,7 @@
   list-style-type: none;
   padding-left: 0;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     display: flex;
   }
 }
@@ -247,7 +247,7 @@
 .nav__studio--bottom-border {
   &::after {
     position: absolute;
-    @media screen and(max-width:1199px) {
+    @media screen and (max-width:1199px) {
       bottom: -32px;
     }
 
@@ -261,7 +261,7 @@
     border-radius: 2px;
     background-color: $hover-link-button-color;
 
-    @media screen and(min-widtn:1200px) {
+    @media screen and (min-widtn:1200px) {
     }
   }
 }
@@ -286,10 +286,10 @@
   list-style-type: none;
   padding-left: 0;
 
-  @media screen and(min-width: 768px) {
+  @media screen and (min-width: 768px) {
     display: block;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     display: flex;
   }
 }
@@ -297,7 +297,7 @@
 .contact__item {
   display: flex;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     &:not(:last-child) {
       margin-bottom: 10px;
     }
@@ -319,7 +319,7 @@
   margin-right: 8px;
   fill: $basic-text-color;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     width: 10px;
     height: 16px;
     margin-right: 10px;
@@ -332,7 +332,7 @@
   margin-right: 8px;
   fill: $basic-text-color;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     width: 16px;
     height: 12px;
     margin-right: 10px;
@@ -350,7 +350,7 @@
   color: $basic-text-color;
   transition: color 250ms $timing-function;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     font-size: 14px;
     line-height: 1.14;
   }

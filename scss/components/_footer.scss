@@ -10,13 +10,13 @@
 }
 .footer__list {
   list-style: none;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     display: flex;
     flex-wrap: wrap;
     padding-left: 61px;
     padding-right: 74px;
       }
-      @media screen and(min-width:1200px) {
+      @media screen and (min-width:1200px) {
         padding-left: 0;
         padding-right: 0;
       }
@@ -31,7 +31,7 @@
   text-align: center;
 
   color: $white-text-color;
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     text-align: left;
   }
 }
@@ -39,7 +39,7 @@
 .address__list {
   list-style-type: none;
   margin-top: 28px;
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     width: 231px;
   }
 }
@@ -60,7 +60,7 @@
   letter-spacing: 0.03em;
   color: $white-text-color;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     text-align: left;
   }
 }
@@ -80,16 +80,16 @@
   &:active {
     color: $hover-link-button-color;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     text-align: left;
   }
 }
 
 .footer-join__set {
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     margin-left: 165px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     margin-left: 70px;
   }
 }
@@ -106,10 +106,10 @@
 
   padding-top: 60px;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     padding-top: 5px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     text-align: left;
     padding-top: 12px;
   }
@@ -123,7 +123,7 @@
   margin-left: auto;
   margin-right: auto;
 
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
   }
 }
 
@@ -151,12 +151,12 @@
 }
 
 .footer-form {
-  @media screen and(min-width:768px) {
+  @media screen and (min-width:768px) {
     margin-left: 90px;
     margin-right: 63px;
     width: 450px;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     margin-right: 0;
     margin-left: 93px;
     width: 570px;
@@ -174,7 +174,7 @@
   padding-top: 60px;
   text-transform: uppercase;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     text-align: left;
     padding-top: 12px;
   }
@@ -214,7 +214,7 @@
     letter-spacing: 0.03em;
     color: $footer-link-color;
   }
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     width: 358px;
     margin-right: 7px;
   }
@@ -232,7 +232,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 
-  @media screen and(min-width:1200px) {
+  @media screen and (min-width:1200px) {
     display: inline;
   }
 }
